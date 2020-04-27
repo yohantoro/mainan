@@ -3,8 +3,8 @@
 // domain email
 $namaDomain = '@mbah.gugel.com';
 
-// hasil generate
-$hasil = null;
+// array $hasil
+$hasil = [];
 
 // daftar data mahasiswa
 $daftarMahasiswa = [
@@ -41,9 +41,10 @@ if ($daftarMahasiswa != null) {
         // ambil lima karakter terakhir noInduk
         $potonganNoInduk = substr($mahasiswa['noInduk'], -5);
 
-        // gabungkan $potonganNama, $potonganNoInduk, dan $namaDomain
+        // gabungan $potonganNama, $potonganNoInduk, dan $namaDomain
         $email = $potonganNama . $potonganNoInduk . $namaDomain;
 
+        // hasil akhir email dimasukkan ke array $hasil
         $hasil[] = $email;
     }
 }
