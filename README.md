@@ -1,2 +1,2 @@
 # mainan
-repositori untuk main-main saja.
+Repositori untuk main-main saja.
